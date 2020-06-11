@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lBr-Ss-AIZ">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ID Card / Passport Reader-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="NFCReadViewController" customModule="NFCEMVReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aF7-Rw-xNg">
+                                <rect key="frame" x="114" y="561" width="147" height="30"/>
+                                <state key="normal" title="READ ID CARD"/>
+                                <connections>
+                                    <action selector="readCardAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aTf-mK-4ie"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P8q-Aq-LGP">
+                                <rect key="frame" x="114" y="68" width="147" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="bbj-Ur-QbU"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mWK-IE-gJY">
+                                <rect key="frame" x="30" y="241" width="315" height="236"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eve-ft-NuK">
+                                <rect key="frame" x="114" y="485" width="147" height="30"/>
+                                <state key="normal" title="START SCAN"/>
+                                <connections>
+                                    <action selector="startScan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfd-ly-Eue"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aF7-Rw-xNg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="6jB-ri-7Bu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eve-ft-NuK" secondAttribute="trailing" constant="114" id="EIu-qn-VL5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aF7-Rw-xNg" secondAttribute="trailing" constant="114" id="FVk-Jb-WBf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mWK-IE-gJY" secondAttribute="trailing" constant="30" id="GMB-wf-6ZT"/>
+                            <constraint firstItem="mWK-IE-gJY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="OEt-C1-7d0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P8q-Aq-LGP" secondAttribute="trailing" constant="114" id="Wzq-VU-heh"/>
+                            <constraint firstItem="mWK-IE-gJY" firstAttribute="top" secondItem="P8q-Aq-LGP" secondAttribute="bottom" constant="16" id="Ye3-l7-ZRA"/>
+                            <constraint firstItem="aF7-Rw-xNg" firstAttribute="top" secondItem="eve-ft-NuK" secondAttribute="bottom" constant="46" id="ZN7-Mm-qU4"/>
+                            <constraint firstItem="eve-ft-NuK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="dlg-Wy-QOR"/>
+                            <constraint firstItem="P8q-Aq-LGP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="r6n-5k-CVN"/>
+                            <constraint firstItem="P8q-Aq-LGP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="rqL-ZS-pGo"/>
+                            <constraint firstItem="eve-ft-NuK" firstAttribute="top" secondItem="mWK-IE-gJY" secondAttribute="bottom" constant="8" id="tkP-RH-2io"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aF7-Rw-xNg" secondAttribute="bottom" constant="76" id="wBN-UT-VNf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ID Card / Passport Reader" id="ylK-ci-f8m"/>
+                    <connections>
+                        <outlet property="btnReadIdCard" destination="aF7-Rw-xNg" id="KSa-VP-Owp"/>
+                        <outlet property="btnStartScan" destination="eve-ft-NuK" id="c87-0P-2vI"/>
+                        <outlet property="imgUserPhoto" destination="P8q-Aq-LGP" id="9a6-mZ-urM"/>
+                        <outlet property="tvUserInfo" destination="mWK-IE-gJY" id="pVL-jk-K6E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743.20000000000005" y="62.518740629685162"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6wn-hQ-xLO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lBr-Ss-AIZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ans-sK-4uo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="aXQ-TP-xzt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xTF-up-4H6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-196" y="62.518740629685162"/>
+        </scene>
+    </scenes>
+</document>

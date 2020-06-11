@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD9E5405F9327D26AE551791 /* Pods_IDCardPassportNFCReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6797BC599CDD6C3AD2C62040 /* Pods_IDCardPassportNFCReader.framework */; };
+		CC3DFB392457A8E300A5ECA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3DFB382457A8E300A5ECA1 /* AppDelegate.swift */; };
+		CC3DFB402457A8E300A5ECA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3DFB3E2457A8E300A5ECA1 /* Main.storyboard */; };
+		CC3DFB422457A8E800A5ECA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC3DFB412457A8E800A5ECA1 /* Assets.xcassets */; };
+		CC3DFB452457A8E800A5ECA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3DFB432457A8E800A5ECA1 /* LaunchScreen.storyboard */; };
+		CCB2811E248F1465008B0F03 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB2811D248F1465008B0F03 /* ScannerViewController.swift */; };
+		CCB28120248F17BB008B0F03 /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB2811F248F17BB008B0F03 /* Scanner.storyboard */; };
+		CCB281222490CFFA008B0F03 /* PassportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB281212490CFFA008B0F03 /* PassportModel.swift */; };
+		CCC60C21248EFD83004942A7 /* NFCReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC60C20248EFD83004942A7 /* NFCReadViewController.swift */; };
+		CCC60C23248F0041004942A7 /* PassportUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC60C22248F0041004942A7 /* PassportUtil.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B269C12547BF786B1A4CB4C /* Pods-IDCardPassportNFCReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDCardPassportNFCReader.debug.xcconfig"; path = "Target Support Files/Pods-IDCardPassportNFCReader/Pods-IDCardPassportNFCReader.debug.xcconfig"; sourceTree = "<group>"; };
+		35CC9089D113B2BF6203C19B /* Pods-NFCEMVReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFCEMVReader.debug.xcconfig"; path = "Target Support Files/Pods-NFCEMVReader/Pods-NFCEMVReader.debug.xcconfig"; sourceTree = "<group>"; };
+		5E865115C9BFF370F1532DF9 /* Pods-NFCEMVReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NFCEMVReader.release.xcconfig"; path = "Target Support Files/Pods-NFCEMVReader/Pods-NFCEMVReader.release.xcconfig"; sourceTree = "<group>"; };
+		6797BC599CDD6C3AD2C62040 /* Pods_IDCardPassportNFCReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IDCardPassportNFCReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC3DFB352457A8E300A5ECA1 /* e-Passport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "e-Passport.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC3DFB382457A8E300A5ECA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC3DFB3F2457A8E300A5ECA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC3DFB412457A8E800A5ECA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC3DFB442457A8E800A5ECA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC3DFB462457A8E800A5ECA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCB2811D248F1465008B0F03 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		CCB2811F248F17BB008B0F03 /* Scanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scanner.storyboard; sourceTree = "<group>"; };
+		CCB281212490CFFA008B0F03 /* PassportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportModel.swift; sourceTree = "<group>"; };
+		CCC60C1D248E59F3004942A7 /* IDCardPassportNFCReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IDCardPassportNFCReader.entitlements; sourceTree = "<group>"; };
+		CCC60C20248EFD83004942A7 /* NFCReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReadViewController.swift; sourceTree = "<group>"; };
+		CCC60C22248F0041004942A7 /* PassportUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportUtil.swift; sourceTree = "<group>"; };
+		D3562F01F1EB68981DEFDF43 /* Pods-IDCardPassportNFCReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IDCardPassportNFCReader.release.xcconfig"; path = "Target Support Files/Pods-IDCardPassportNFCReader/Pods-IDCardPassportNFCReader.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC3DFB322457A8E300A5ECA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9E5405F9327D26AE551791 /* Pods_IDCardPassportNFCReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A4D3B123A62554AFFDBC229 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35CC9089D113B2BF6203C19B /* Pods-NFCEMVReader.debug.xcconfig */,
+				5E865115C9BFF370F1532DF9 /* Pods-NFCEMVReader.release.xcconfig */,
+				0B269C12547BF786B1A4CB4C /* Pods-IDCardPassportNFCReader.debug.xcconfig */,
+				D3562F01F1EB68981DEFDF43 /* Pods-IDCardPassportNFCReader.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6E4C7BF101234CE33B9F1573 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6797BC599CDD6C3AD2C62040 /* Pods_IDCardPassportNFCReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC3DFB2C2457A8E300A5ECA1 = {
+			isa = PBXGroup;
+			children = (
+				6E4C7BF101234CE33B9F1573 /* Frameworks */,
+				CC3DFB372457A8E300A5ECA1 /* IDCardPassportNFCReader */,
+				0A4D3B123A62554AFFDBC229 /* Pods */,
+				CC3DFB362457A8E300A5ECA1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC3DFB362457A8E300A5ECA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC3DFB352457A8E300A5ECA1 /* e-Passport.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC3DFB372457A8E300A5ECA1 /* IDCardPassportNFCReader */ = {
+			isa = PBXGroup;
+			children = (
+				CCB281242490F735008B0F03 /* Model */,
+				CCB281262490F76A008B0F03 /* Storyboard */,
+				CCB281252490F748008B0F03 /* Util */,
+				CCB281232490F70B008B0F03 /* Views */,
+				CC3DFB382457A8E300A5ECA1 /* AppDelegate.swift */,
+				CC3DFB412457A8E800A5ECA1 /* Assets.xcassets */,
+				CC3DFB462457A8E800A5ECA1 /* Info.plist */,
+				CCC60C1D248E59F3004942A7 /* IDCardPassportNFCReader.entitlements */,
+			);
+			path = IDCardPassportNFCReader;
+			sourceTree = "<group>";
+		};
+		CCB281232490F70B008B0F03 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CCC60C20248EFD83004942A7 /* NFCReadViewController.swift */,
+				CCB2811D248F1465008B0F03 /* ScannerViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CCB281242490F735008B0F03 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCB281212490CFFA008B0F03 /* PassportModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CCB281252490F748008B0F03 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CCC60C22248F0041004942A7 /* PassportUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		CCB281262490F76A008B0F03 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CC3DFB432457A8E800A5ECA1 /* LaunchScreen.storyboard */,
+				CC3DFB3E2457A8E300A5ECA1 /* Main.storyboard */,
+				CCB2811F248F17BB008B0F03 /* Scanner.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC3DFB342457A8E300A5ECA1 /* IDCardPassportNFCReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC3DFB492457A8E800A5ECA1 /* Build configuration list for PBXNativeTarget "IDCardPassportNFCReader" */;
+			buildPhases = (
+				A254F4ED1C18164519B4A994 /* [CP] Check Pods Manifest.lock */,
+				CC3DFB312457A8E300A5ECA1 /* Sources */,
+				CC3DFB322457A8E300A5ECA1 /* Frameworks */,
+				CC3DFB332457A8E300A5ECA1 /* Resources */,
+				FEE2AAA691C3DA76A722061B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IDCardPassportNFCReader;
+			productName = NFCEMVReader;
+			productReference = CC3DFB352457A8E300A5ECA1 /* e-Passport.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC3DFB2D2457A8E300A5ECA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = AliMert;
+				TargetAttributes = {
+					CC3DFB342457A8E300A5ECA1 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CC3DFB302457A8E300A5ECA1 /* Build configuration list for PBXProject "IDCardPassportNFCReader" */;
+			compatibilityVersion = "Xcode 11.4";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC3DFB2C2457A8E300A5ECA1;
+			productRefGroup = CC3DFB362457A8E300A5ECA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC3DFB342457A8E300A5ECA1 /* IDCardPassportNFCReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC3DFB332457A8E300A5ECA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC3DFB452457A8E800A5ECA1 /* LaunchScreen.storyboard in Resources */,
+				CC3DFB422457A8E800A5ECA1 /* Assets.xcassets in Resources */,
+				CC3DFB402457A8E300A5ECA1 /* Main.storyboard in Resources */,
+				CCB28120248F17BB008B0F03 /* Scanner.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A254F4ED1C18164519B4A994 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IDCardPassportNFCReader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEE2AAA691C3DA76A722061B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IDCardPassportNFCReader/Pods-IDCardPassportNFCReader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IDCardPassportNFCReader/Pods-IDCardPassportNFCReader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IDCardPassportNFCReader/Pods-IDCardPassportNFCReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC3DFB312457A8E300A5ECA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC60C21248EFD83004942A7 /* NFCReadViewController.swift in Sources */,
+				CCB2811E248F1465008B0F03 /* ScannerViewController.swift in Sources */,
+				CCC60C23248F0041004942A7 /* PassportUtil.swift in Sources */,
+				CC3DFB392457A8E300A5ECA1 /* AppDelegate.swift in Sources */,
+				CCB281222490CFFA008B0F03 /* PassportModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CC3DFB3E2457A8E300A5ECA1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC3DFB3F2457A8E300A5ECA1 /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		CC3DFB432457A8E800A5ECA1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC3DFB442457A8E800A5ECA1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC3DFB472457A8E800A5ECA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC3DFB482457A8E800A5ECA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC3DFB4A2457A8E800A5ECA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B269C12547BF786B1A4CB4C /* Pods-IDCardPassportNFCReader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IDCardPassportNFCReader/IDCardPassportNFCReader.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TR7NJZNZBL;
+				INFOPLIST_FILE = IDCardPassportNFCReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alimert.test.IDCardPassportNFCReader;
+				PRODUCT_NAME = "e-Passport";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC3DFB4B2457A8E800A5ECA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3562F01F1EB68981DEFDF43 /* Pods-IDCardPassportNFCReader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IDCardPassportNFCReader/IDCardPassportNFCReader.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GSB25324NW;
+				INFOPLIST_FILE = IDCardPassportNFCReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alimert.test.IDCardPassportNFCReader;
+				PRODUCT_NAME = "e-Passport";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC3DFB302457A8E300A5ECA1 /* Build configuration list for PBXProject "IDCardPassportNFCReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC3DFB472457A8E800A5ECA1 /* Debug */,
+				CC3DFB482457A8E800A5ECA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC3DFB492457A8E800A5ECA1 /* Build configuration list for PBXNativeTarget "IDCardPassportNFCReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC3DFB4A2457A8E800A5ECA1 /* Debug */,
+				CC3DFB4B2457A8E800A5ECA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC3DFB2D2457A8E300A5ECA1 /* Project object */;
+}
