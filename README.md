@@ -1,6 +1,6 @@
 # IDCardPassportNFCReader
 
-After download the project you have to run below script inside project root directory
+After download the project you have to run below script inside the project root directory
 
 - pod install
 
