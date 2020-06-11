@@ -9,5 +9,6 @@ When all pod dependecies have been installed, open "**IDCardPassportNFCReader.xc
 
 ## It uses AndyQ/NFCPassportReader as dependency in order to read chip data of Passport/ID Card via NFC
 - <https://github.com/AndyQ/NFCPassportReader>
+
 ## It uses Mattijah/QKMRZScanner as dependency in order to scan MRZ (machine-readable zone) data via camera
 - <https://github.com/Mattijah/QKMRZScanner>
